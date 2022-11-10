@@ -108,14 +108,25 @@ footer ul {
 }
 
 /* sobre nosotros */
-.hero-sobre-nosotros {
-    background-image: url("imagenes/hero.png");
-    height: 400px;
+body {
+    background-image: url("imagenes/sobre-nosotros.png");
+    width: 100%;
+    height: 600px;
     background-size: cover;
-    color: rgb(40, 37, 40);
+    background-repeat: no-repeat;
+}
+.hero-sobre-nosotros {
+    background: linear-gradient(0deg, rgba(40,37,40,1) 0%, rgba(40,37,40,0) 100%);
+    height: 615px;
 }
 .hero-sobre-nosotros a {
     color: rgb(40, 37, 40);
+}
+.hero-sobre-nosotros h1 {
+    padding-top: 420px;
+    padding-left: 20px;
+    font-weight: 300;
+    font-size: 70px;
 }
 .sobre-nosotros {
     margin: 40px 40px 100px 40px;
@@ -124,11 +135,7 @@ footer ul {
     padding-left: 50px;
     padding-right: 50px;
 }
-.sobre-nosotros h1 {
-    padding-bottom: 30px;
-    font-weight: 300;
-    font-size: 70px;
-}
+
 .sobre-nosotros p {
     padding-bottom: 40px;
     padding-left: 15px;
@@ -138,11 +145,18 @@ footer ul {
 /* wikiplantas */
 .hero {
     text-align: center;
-    height: 200px;
-    padding-bottom: 45px;
+    background: linear-gradient(0deg, rgba(40,37,40,1) 0%, rgba(40,37,40,0.8) 60%, rgba(40,37,40,0) 100%);
+    height: 615px;
 }
 .hero h1 {
-    padding-top: 60px;
+    padding-top: 100px;
+}
+.hero a {
+    color:rgb(40, 37, 40);
+}
+.cards {
+    position: relative;
+    top: -300px;
 }
 h2 {
     margin-left: 10px;
@@ -193,6 +207,8 @@ h2 {
 /* plantips */
 
 .categoria-tips {
+    position: relative;
+    top: -300px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -215,6 +231,8 @@ h2 {
 
 /* tus plantitas */
 .botones {
+    position: relative;
+    top: -300px;
     display: flex;
     flex-direction: row;
     justify-content: center;
