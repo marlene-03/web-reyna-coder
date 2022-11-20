@@ -78,6 +78,7 @@ footer img {
     padding-top: 20px;
     padding-bottom: 0px;
 }
+
 footer p {
     font-weight: 300;
 }
@@ -106,6 +107,31 @@ footer ul {
 .item {
     padding-top: 5px;
 }
+
+@media only screen and (max-width: 412px) {
+    img {
+        width: 50%;
+        padding-bottom: 150px;
+    }
+    footer {
+        font-size: smaller;
+    }
+    footer img {
+        width: 150px;
+    }
+    .estructura li {
+        display: none;
+    }
+    .estructura {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    footer ul {
+        margin-left: 0px;
+        margin-bottom: 5px;
+    }
+}
+
 
 /* sobre nosotros */
 body {
@@ -139,8 +165,22 @@ body {
 .sobre-nosotros p {
     padding-bottom: 40px;
     padding-left: 15px;
+
 }
 
+@media only screen and (max-width: 412px) {
+    .hero-sobre-nosotros h1 {
+        padding-top: 50px;
+        font-size: 60px;
+    }
+    .sobre-nosotros {
+        margin-left: 10px;
+        margin-top: -280px;
+    }
+    .sobre-nosotros div {
+        padding-left: 10px;
+    }
+}
 
 /* wikiplantas */
 .hero {
@@ -177,7 +217,21 @@ h2 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5px; /* 5px rounded corners */
 }
-  
+@media only screen and (max-width: 412px) {
+    .carrusel-cards {
+       flex-wrap: nowrap;
+       overflow-x: auto;
+       margin-bottom: 60px;
+    }
+    .tarjetas-wiki {
+        flex: 0 0 auto;
+    }
+    .hero p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
 .img-card {
     padding: 0%;
     height: 400px;
@@ -220,6 +274,7 @@ h2 {
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
+    box-sizing: unset;
 }
 .categoria img {
     width: 300px;
@@ -362,11 +417,9 @@ input {
 	width: 50%;
     right: 0;
 }
-
 .redes {
 	margin: 20px 0;
 }
-
 .redes a {
 	border: 1px solid #DDDDDD;
 	border-radius: 50%;
@@ -376,4 +429,22 @@ input {
 	margin: 0 5px;
 	height: 40px;
 	width: 40px;
+}
+
+@media only screen and (max-width: 412px) {
+    .formulario {
+        width: 300px;
+    }
+    .registro-contenedor {
+        display: none;
+    }
+    .ingresar {
+        width: 100%;
+    }
+    form {
+        padding: 10px;
+    }
+    input {
+        width: 80%;
+    }
 }
